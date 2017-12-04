@@ -20,10 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.iv_top)
     ImageView ivTop;
-    @BindView(R.id.tv_title)
-    TextView tvTitle;
-    @BindView(R.id.tv_direccion)
-    TextView tvDireccion;
     @BindView(R.id.btn_cotizar)
     Button btnCotizar;
     @BindView(R.id.btn_estado)
