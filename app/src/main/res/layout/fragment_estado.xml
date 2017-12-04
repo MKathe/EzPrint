@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:id="@+id/et_cod"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:hint="ingresar código"/>
+
+            <Button
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/et_cod"
+                android:id="@+id/btn_enviar"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Ver Estado"/>
+
+            <TextView
+                android:layout_below="@id/btn_enviar"
+                android:id="@+id/tv_cliente"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Cliente"/>
+
+            <TextView
+                android:layout_below="@id/tv_cliente"
+                android:id="@+id/tv_result"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado del pedido"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/tv_result"
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>
